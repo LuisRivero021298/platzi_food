@@ -3,6 +3,12 @@
 body {
   font-family: 'Roboto', sans-serif;  
 }
+.logo__container {
+  background-image: url('../images/logo-w.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 
 @tailwind components;
 @tailwind utilities;
