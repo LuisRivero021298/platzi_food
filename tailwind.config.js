@@ -7,6 +7,9 @@ module.exports = {
         'dark-primary': '#353535',
         'grey-primary': '#6e6e6e',
         'secondary': '#2dced6' 
+      },
+      height: {
+        '80': '20rem'
       }
     },
   },

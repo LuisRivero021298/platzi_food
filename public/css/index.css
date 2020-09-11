@@ -601,6 +601,15 @@ body {
   background-size: contain;
 }
 
+/*BANNER*/
+
+#banner img {
+  -o-object-position: 50% 65%;
+     object-position: 50% 65%;
+}
+
+/*FOOTER*/
+
 .fb svg,
 .tw svg,
 .ig svg{
@@ -10740,6 +10749,10 @@ body {
 
 .h-64 {
   height: 16rem;
+}
+
+.h-80 {
+  height: 20rem;
 }
 
 .h-auto {
@@ -31943,6 +31956,10 @@ body {
     height: 16rem;
   }
 
+  .sm\:h-80 {
+    height: 20rem;
+  }
+
   .sm\:h-auto {
     height: auto;
   }
@@ -53077,6 +53094,10 @@ body {
 
   .md\:h-64 {
     height: 16rem;
+  }
+
+  .md\:h-80 {
+    height: 20rem;
   }
 
   .md\:h-auto {
@@ -74215,6 +74236,10 @@ body {
     height: 16rem;
   }
 
+  .lg\:h-80 {
+    height: 20rem;
+  }
+
   .lg\:h-auto {
     height: auto;
   }
@@ -95349,6 +95374,10 @@ body {
 
   .xl\:h-64 {
     height: 16rem;
+  }
+
+  .xl\:h-80 {
+    height: 20rem;
   }
 
   .xl\:h-auto {

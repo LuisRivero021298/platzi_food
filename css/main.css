@@ -11,6 +11,14 @@ body {
   background-position: center;
   background-size: contain;
 }
+
+
+/*BANNER*/
+#banner img {
+  object-position: 50% 65%;
+}
+
+/*FOOTER*/
 .fb svg,
 .tw svg,
 .ig svg{
