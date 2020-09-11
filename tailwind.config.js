@@ -10,6 +10,9 @@ module.exports = {
       },
       height: {
         '80': '20rem'
+      },
+      padding: {
+        '80': '20rem'
       }
     },
   },

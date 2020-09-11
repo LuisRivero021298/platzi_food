@@ -5,6 +5,10 @@ html, body {
 body {
   font-family: 'Roboto', sans-serif;  
 }
+textarea {
+  resize: none;
+}
+
 .logo__container {
   background-image: url('../images/logo-w.svg');
   background-repeat: no-repeat;
