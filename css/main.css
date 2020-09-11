@@ -17,12 +17,53 @@ textarea {
 }
 
 
-/*BANNER*/
+/***************** BANNER *****************/
 #banner img {
   object-position: 50% 65%;
 }
 
-/*FOOTER*/
+/***************** CONTACT FORM *****************/
+#contact {
+  @apply p-8;
+  @apply bg-white;
+}
+.contact__title {
+  @apply text-3xl text-center font-semibold text-gray-900 capitalize;
+}
+.contact__label {
+  @apply block text-lg text-gray-700;
+}
+.contact__input {
+  @apply bg-gray-200 px-2 w-full h-10 rounded-md;
+}
+.contact__input--area {
+  @apply bg-gray-200 px-2 w-full h-10 rounded-md;
+  @apply h-20 py-2 leading-snug;
+}
+.contact__input:focus {
+  @apply outline-none shadow-outline;
+}
+.contact__input--area:focus {
+  @apply outline-none shadow-outline;
+}
+.contact__btn {
+  @apply bg-primary px-10 py-3 text-lg m-auto block mt-3 text-gray-900 rounded-md font-medium;
+}
+@screen md {
+  #contact {
+    @apply px-32;
+  }
+  .contact__btn {
+    @apply px-20;
+  }
+}
+@screen lg {
+  #contact {
+    @apply px-80;
+  }
+}
+
+/***************** FOOTER *****************/
 .fb svg,
 .tw svg,
 .ig svg{

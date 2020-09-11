@@ -47,25 +47,25 @@
       </article>
     </section>
 
-    <section class="p-8 md:px-32 lg:px-80 bg-white" id="contact">
-      <h3 class="text-3xl text-center font-semibold text-gray-900 capitalize">Contact us</h3>
+    <section id="contact">
+      <h3 class="contact__title">Contact us</h3>
       <form>
         <div class="mt-3">
-          <label class="block text-lg text-gray-700" for="name">Name</label>
-          <input placeholder="What's your name?" class="bg-gray-200 px-2 w-full h-10 rounded-md focus:outline-none focus:shadow-outline" type="text" id="name">
+          <label class="contact__label" for="name">Name</label>
+          <input placeholder="What's your name?" class="contact__input" type="text" id="name">
         </div>
         
         <div class="mt-3">
-          <label class="block text-lg text-gray-700" for="email">Email</label>
-          <input placeholder="What's your email address?" class="bg-gray-200 px-2 w-full h-10 rounded-md focus:outline-none focus:shadow-outline" type="text" id="email">
+          <label class="contact__label" for="email">Email</label>
+          <input placeholder="What's your email address?" class="contact__input" type="text" id="email">
         </div>
 
         <div class="mt-3">
-          <label class="block text-lg text-gray-700" for="comments">Comments</label>
-          <textarea placeholder="Write a comment" class="bg-gray-200 p-2 w-full h-20 lg:h-24 rounded-md leading-snug focus:outline-none focus:shadow-outline" name="comments" id="comments"></textarea>
+          <label class="contact__label" for="comments">Comments</label>
+          <textarea placeholder="Write a comment" class="contact__input--area lg:h-24" name="comments" id="comments"></textarea>
         </div>
 
-        <button class="bg-primary md:px-20 px-10 py-3 text-lg m-auto block mt-3 text-gray-900 rounded-md font-medium">Enviar</button>
+        <button class="contact__btn">Enviar</button>
       </form>
     </section>
   </main>
