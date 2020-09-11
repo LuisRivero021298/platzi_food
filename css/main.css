@@ -1,5 +1,7 @@
 @tailwind base;
-
+html, body {
+  min-height: 100vh;
+}
 body {
   font-family: 'Roboto', sans-serif;  
 }
@@ -8,6 +10,20 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+.fb svg,
+.tw svg,
+.ig svg{
+  fill: #FFF;
+}
+.fb:hover svg{
+  fill: #3182ce;
+}
+.tw:hover svg{
+  fill: #90cdf4;
+}
+.ig:hover svg{
+  fill: #f687b3;
 }
 
 @tailwind components;
