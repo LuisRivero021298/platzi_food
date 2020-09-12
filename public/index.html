@@ -7,15 +7,16 @@
   <link rel="shortcut icon" href="./images/logo-w.svg" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
+  
 </head>
 <body class="min-h-screen bg-gray-300">
-  <header class="bg-dark-primary w-full h-auto text-white px-5 fixed z-10">
+  <header x-data="{ open: false }" class="bg-dark-primary w-full h-auto text-white px-5 py-2 fixed z-10">
     <section class="flex justify-between items-center">
       <div class="logo__container w-24 lg:w-32 h-8"></div>
-      <div class="text-2xl cursor-pointer">&equiv;</div>
+      <div class="text-2xl cursor-pointer" @click="open = true">&equiv;</div>
     </section>
-    <nav id="navbar">
-      <form class="pb-4">
+    <nav id="navbar" x-show="open" @click.away="open = false">
+      <form class="pb-2">
         <input type="text" class="contact__input my-4 text-gray-900" placeholder="search">
         <section class="filter flex flex-col items-center md:flex-row md:justify-around md:text-lg">
           <div class="flex pr-1">
@@ -42,7 +43,7 @@
     </nav>
   </header>
 
-  <main class="pt-56">
+  <main class="pt-8">
     <section id="banner">
       <figure>
         <img class="w-full object-cover h-40 md:h-80" src="./images/snack-2635035_1920.jpg" alt="banner">
@@ -120,5 +121,7 @@
       <li class="md:px-2">Privacy</li>
     </ul>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.min.js" defer></script>
 </body>
 </html>
