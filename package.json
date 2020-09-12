@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "alpinejs": "^2.7.0",
     "autoprefixer": "^9.8.6",
     "postcss-cli": "^7.1.2",
     "tailwindcss": "^1.8.5"

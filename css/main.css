@@ -16,7 +16,6 @@ textarea {
   background-size: contain;
 }
 
-
 /***************** BANNER *****************/
 #banner img {
   object-position: 50% 65%;
@@ -37,8 +36,7 @@ textarea {
   @apply bg-gray-200 px-2 w-full h-10 rounded-md;
 }
 .contact__input--area {
-  @apply bg-gray-200 px-2 w-full h-10 rounded-md;
-  @apply h-20 py-2 leading-snug;
+  @apply bg-gray-200 px-2 w-full rounded-md h-20 py-2 leading-snug;
 }
 .contact__input:focus {
   @apply outline-none shadow-outline;
