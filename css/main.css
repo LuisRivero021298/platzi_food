@@ -3,25 +3,94 @@ html, body {
   min-height: 100vh;
 }
 body {
-  font-family: 'Roboto', sans-serif;  
+  font-family: 'Roboto', sans-serif;
+  @apply min-h-screen bg-gray-300;  
 }
 textarea {
   resize: none;
 }
+main {
+  padding-top: 50px;
+}
 
+@tailwind components;
+/********************* HEADER  ************************/
+#mainHeader {
+  @apply bg-dark-primary w-full h-auto text-white px-5 py-2 fixed z-10;
+}
 .logo__container {
   background-image: url('../images/logo-w.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
+.filter__container {
+  @apply flex flex-col items-center;
+}
+.filter--price li{
+  @apply px-px inline-block;
+}
+.filter--calification li{
+  @apply pl-px inline-block;
+}
 
 /***************** BANNER *****************/
 #banner img {
   object-position: 50% 65%;
+  @apply w-full object-cover;
 }
 
-/***************** CONTACT FORM *****************/
+/********************* FOOD CONTAINER  ************************/
+#food {
+  @apply grid gap-8 p-8;
+}
+
+/*Cards*/
+.card {
+  @apply cursor-pointer rounded-lg;
+}
+.card__image img{
+  @apply rounded-lg w-full;
+}
+.card__content {
+  @apply bg-white rounded-lg p-3 relative w-11/12 m-auto -mt-8 shadow-lg;
+}
+.card__title {
+  @apply font-bold text-2xl uppercase text-gray-900;
+}
+.card__text {
+  @apply leading-5 text-gray-700;
+}
+.card__text--secondary {
+  @apply mt-2 block text-gray-700 text-sm;
+}
+
+@screen md {
+  .card__content { 
+    @apply shadow-none mx-2;
+  }
+  .card__title {
+    @apply text-3xl;
+  }
+  .card__text {
+    @apply text-xl mt-2;
+  }
+  .card__text--secondary {
+    @apply text-lg;
+  }
+}
+@screen lg {
+  .card {
+    @apply flex bg-white;
+  }
+  .card__image img{
+    @apply h-full;
+  }
+  .card__content { 
+    @apply bg-transparent mt-0;
+  }
+}
+/***************** CONTACT *****************/
 #contact {
   @apply p-8;
   @apply bg-white;
@@ -29,29 +98,31 @@ textarea {
 .contact__title {
   @apply text-3xl text-center font-semibold text-gray-900 capitalize;
 }
-.contact__label {
+
+/***************** FORM CONTROLS ****************/
+.form__label {
   @apply block text-lg text-gray-700;
 }
-.contact__input {
-  @apply bg-gray-200 px-2 w-full h-10 rounded-md;
+.form__input {
+  @apply bg-gray-200 px-2 w-full h-10 rounded-md text-gray-900;
 }
-.contact__input--area {
+.form__input--area {
   @apply bg-gray-200 px-2 w-full rounded-md h-20 py-2 leading-snug;
 }
-.contact__input:focus {
+.form__input:focus {
   @apply outline-none shadow-outline;
 }
-.contact__input--area:focus {
+.form__input--area:focus {
   @apply outline-none shadow-outline;
 }
-.contact__btn {
-  @apply bg-primary px-10 py-3 text-lg m-auto block mt-3 text-gray-900 rounded-md font-medium;
+.form__btn {
+  @apply bg-primary px-10 py-3 text-lg block mt-3 text-gray-900 rounded-md font-medium;
 }
 @screen md {
   #contact {
     @apply px-32;
   }
-  .contact__btn {
+  .form__btn {
     @apply px-20;
   }
 }
@@ -62,6 +133,25 @@ textarea {
 }
 
 /***************** FOOTER *****************/
+#mainFooter {
+  @apply text-center bg-dark-primary text-white p-4;
+}
+.socialMedia {
+  @apply w-1/3 flex justify-around m-auto mb-4;
+}
+
+@screen lg {
+  #mainFooter {
+    @apply text-lg text-left flex justify-between items-center;
+  }
+  .socialMedia {
+    @apply m-0 justify-start;
+  }
+}
+
+.fb,.tw,.ig {
+  @apply cursor-pointer;
+}
 .fb svg,
 .tw svg,
 .ig svg{
@@ -77,5 +167,5 @@ textarea {
   fill: #f687b3;
 }
 
-@tailwind components;
+
 @tailwind utilities;
